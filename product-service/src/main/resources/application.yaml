@@ -1,3 +1,13 @@
 spring:
   application:
     name: product-service
+
+# Fixme: problem connecting to the db when authentication is required
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: product-service
+#      username: root
+#      password: password
+#      authentication-database: admin

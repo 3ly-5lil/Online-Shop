@@ -1,0 +1,3 @@
+mongosh --authenticationDatabase admin -u root -p password grant_role.js
+mongosh "mongodb://root:password@localhost:27017/?authSource=admin"
+disableTelemetry()
