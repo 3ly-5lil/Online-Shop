@@ -1,3 +1,20 @@
 spring:
   application:
     name: order-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5431/order-service
+    username: postgres
+    password: password@123
+
+  jpa:
+    show-sql: true
+    dll-auto: none
+
+  flyway:
+    baseline-on-migrate: true
+    validate-on-migrate: true
+
+server:
+  # info: the product-service already take the port:8080
+  port: 8081
