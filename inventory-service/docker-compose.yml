@@ -1,14 +1,13 @@
 services:
   db:
     image: postgres:18
-    container_name: order-postgres
+    container_name: inventory-postgres
     ports:
-      # info: postgreSQL desktop is already running on port:5432 needed to change it
       - "5431:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password@123
-      POSTGRES_DB: order-service
+      POSTGRES_DB: inventory-service
 
     volumes:
       - ./postgresql:/data/postgres
