@@ -4,7 +4,7 @@ services:
     container_name: order-postgres
     ports:
       # info: postgreSQL desktop is already running on port:5432 needed to change it
-      - "5431:5432"
+      - "5434:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password@123

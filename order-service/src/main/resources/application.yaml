@@ -3,7 +3,7 @@ spring:
     name: order-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5431/order-service
+    url: jdbc:postgresql://localhost:5434/order-service
     username: postgres
     password: password@123
 
@@ -18,3 +18,6 @@ spring:
 server:
   # info: the product-service already take the port:8080
   port: 8081
+
+inventory:
+  url: http://localhost:8082

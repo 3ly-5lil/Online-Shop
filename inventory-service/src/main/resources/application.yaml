@@ -3,7 +3,7 @@ spring:
     name: inventory-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5431/inventory-service
+    url: jdbc:postgresql://localhost:5435/inventory-service
     username: postgres
     password: password@123
 
